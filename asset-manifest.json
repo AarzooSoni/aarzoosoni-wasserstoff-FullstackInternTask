@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aarzoosoni-wasserstoff-FullstackInternTask/static/css/main.75f32216.css",
+    "main.js": "/aarzoosoni-wasserstoff-FullstackInternTask/static/js/main.819fa274.js",
+    "index.html": "/aarzoosoni-wasserstoff-FullstackInternTask/index.html",
+    "main.75f32216.css.map": "/aarzoosoni-wasserstoff-FullstackInternTask/static/css/main.75f32216.css.map",
+    "main.819fa274.js.map": "/aarzoosoni-wasserstoff-FullstackInternTask/static/js/main.819fa274.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75f32216.css",
+    "static/js/main.819fa274.js"
+  ]
+}
