@@ -1,0 +1,163 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .weather-card {
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s;
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .weather-header {
+    margin-bottom: 20px;
+  }
+  
+  .city-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .weather-description {
+    font-size: 1.1rem;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .weather-details {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .weather-details p {
+    margin: 10px 0;
+  }
+  
+  .temperature strong {
+    color: #ff7f50;
+  }
+  
+  .humidity strong,
+  .wind strong {
+    color: #4682b4;
+  }
+  
+  /* Toggle button for unit conversion */
+  .toggle-container {
+    margin: 15px 0;
+  }
+  
+  .toggle-label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .toggle-button {
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-button:checked {
+    background-color: #4caf50;
+  }
+  
+  .toggle-button:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .toggle-button:checked:before {
+    transform: translateX(25px);
+  }
+  
+  /* City input field */
+  .city-input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .city-input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Get Weather button */
+  .get-weather-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-weather-btn:hover {
+    background-color: #e66a3b;
+    transform: translateY(-3px);
+  }
+  
+  @media (max-width: 600px) {
+    .weather-card {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    .city-name {
+      font-size: 1.2rem;
+    }
+  
+    .weather-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .weather-details {
+      font-size: 0.9rem;
+    }
+  
+    .get-weather-btn {
+      width: 100%;
+    }
+  }
+  
